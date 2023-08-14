@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie/Event Management</title>
+<style>
+  body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Movie/Event Management</h2>
+  <form id="managementForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <select id="type" name="type" required>
+        <option value="movie">Movie</option>
+        <option value="event">Event</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="timings">Timings</label>
+      <input type="text" id="timings" name="timings" placeholder="HH:MM AM/PM">
+    </div>
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('managementForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const type = document.getElementById('type').value;
+    const timings = document.getElementById('timings').value;
+    // Add your logic to handle the form submission and updating timings here
+    console.log(`Name: ${name}, Type: ${type}, Timings: ${timings}`);
+    form.reset();
+  });
+</script>
+</body>
+</html>

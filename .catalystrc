@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "5069000000010045",
+      "name": "OnlineMovieTicketBooking",
+      "domain": {
+        "id": "50015144220",
+        "name": "onlinemovieticketbooking-60023095573.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60023095573",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

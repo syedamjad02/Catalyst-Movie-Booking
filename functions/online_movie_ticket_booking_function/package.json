@@ -1,0 +1,9 @@
+{
+	"name": "online_movie_ticket_booking_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "syedamjad8820@gmail.com",
+	"dependencies": {
+		"zcatalyst-sdk-node": "latest"
+	}
+}

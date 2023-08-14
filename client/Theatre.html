@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theatre Submission</title>
+<style>
+  body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  input[type="file"] {
+    cursor: pointer;
+  }
+
+  .submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Theatre Submission Form</h2>
+  <form>
+    <div class="form-group">
+      <label for="theatreName">Theatre Name</label>
+      <input type="text" id="theatreName" name="theatreName" required>
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" required>
+    </div>
+    <div class="form-group">
+      <label for="image">Theatre Image</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+    </div>
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</div>
+</body>
+</html>

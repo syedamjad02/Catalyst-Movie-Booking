@@ -1,0 +1,11 @@
+{
+	"deployment": {
+		"name": "online_movie_ticket_booking_function",
+		"stack": "node16",
+		"type": "advancedio",
+		"env_variables": {}
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}

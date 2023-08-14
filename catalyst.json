@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "targets": [
+      "online_movie_ticket_booking_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

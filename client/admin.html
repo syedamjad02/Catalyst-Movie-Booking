@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+  body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .button-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .button-link:hover {
+    background-color: #0056b3;
+  }
+
+  .info {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Admin Dashboard</h2>
+  <a href="Theatre.html" class="button-link">Add New Theatre</a>
+  <a href="addMovie.html" class="button-link">Add New Event/Movie</a>
+  <div class="info">
+    <p>Total Amount Collected: $5000</p>
+    <p>Booked Seat Counts: 150</p>
+    <p>Free Seat Counts: 250</p>
+  </div>
+</div>
+</body>
+</html>
